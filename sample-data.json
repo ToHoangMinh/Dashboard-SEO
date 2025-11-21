@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated": "2025-09-19T10:30:00.000Z",
+    "description": "Sample data for DeadlineSEO Dashboard - Sales Management System",
+    "company": "DeadlineSEO",
+    "currency": "VND"
+  },
+  
+  "kpi": {
+    "revenue": {
+      "today": 45890000,
+      "yesterday": 40850000,
+      "thisWeek": 312450000,
+      "lastWeek": 289650000,
+      "thisMonth": 1245670000,
+      "lastMonth": 1156890000,
+      "changePercent": 12.5,
+      "trend": "up"
+    },
+    "orders": {
+      "today": 247,
+      "yesterday": 228,
+      "thisWeek": 1643,
+      "lastWeek": 1534,
+      "thisMonth": 6789,
+      "lastMonth": 6234,
+      "changePercent": 8.3,
+      "trend": "up"
+    },
+    "conversion": {
+      "today": 3.2,
+      "yesterday": 3.7,
+      "thisWeek": 3.1,
+      "lastWeek": 3.4,
+      "thisMonth": 3.3,
+      "lastMonth": 3.5,
+      "changePercent": -0.5,
+      "trend": "down"
+    },
+    "visitors": {
+      "today": 7823,
+      "yesterday": 6762,
+      "thisWeek": 48765,
+      "lastWeek": 42134,
+      "thisMonth": 198432,
+      "lastMonth": 176543,
+      "changePercent": 15.7,
+      "trend": "up"
+    }
+  },
+  
+  "revenueChart": {
+    "period": "30days",
+    "labels": [
+      "20/08", "21/08", "22/08", "23/08", "24/08", "25/08", "26/08", "27/08", "28/08", "29/08",
+      "30/08", "31/08", "01/09", "02/09", "03/09", "04/09", "05/09", "06/09", "07/09", "08/09",
+      "09/09", "10/09", "11/09", "12/09", "13/09", "14/09", "15/09", "16/09", "17/09", "18/09", "19/09"
+    ],
+    "data": [
+      42500000, 38900000, 45200000, 41800000, 48600000, 52300000, 49800000, 46700000, 44200000, 47900000,
+      51200000, 48800000, 45600000, 49300000, 52800000, 47400000, 44900000, 48700000, 51600000, 49200000,
+      46800000, 50400000, 53200000, 48900000, 47600000, 49800000, 52100000, 48300000, 46900000, 50200000, 45890000
+    ],
+    "averageOrderValue": [
+      172000, 165000, 178000, 169000, 185000, 189000, 181000, 175000, 168000, 177000,
+      184000, 179000, 173000, 181000, 187000, 176000, 171000, 179000, 183000, 178000,
+      174000, 182000, 188000, 180000, 176000, 181000, 186000, 177000, 174000, 182000, 178000
+    ]
+  },
+  
+  "topProducts": {
+    "period": "30days",
+    "products": [
+      {
+        "id": "SP001",
+        "name": "Áo thun basic premium",
+        "category": "Thời trang",
+        "soldQuantity": 156,
+        "revenue": 9360000,
+        "averagePrice": 60000,
+        "trend": "up",
+        "changePercent": 23.5
+      },
+      {
+        "id": "SP002", 
+        "name": "Giày sneaker thể thao",
+        "category": "Giày dép",
+        "soldQuantity": 142,
+        "revenue": 21300000,
+        "averagePrice": 150000,
+        "trend": "up",
+        "changePercent": 18.7
+      },
+      {
+        "id": "SP003",
+        "name": "Túi xách nữ cao cấp",
+        "category": "Phụ kiện",
+        "soldQuantity": 128,
+        "revenue": 19200000,
+        "averagePrice": 150000,
+        "trend": "stable",
+        "changePercent": 2.1
+      },
+      {
+        "id": "SP004",
+        "name": "Điện thoại Samsung Galaxy",
+        "category": "Điện tử",
+        "soldQuantity": 98,
+        "revenue": 147000000,
+        "averagePrice": 1500000,
+        "trend": "up",
+        "changePercent": 12.3
+      },
+      {
+        "id": "SP005",
+        "name": "Laptop Dell Inspiron",
+        "category": "Máy tính",
+        "soldQuantity": 87,
+        "revenue": 174000000,
+        "averagePrice": 2000000,
+        "trend": "down",
+        "changePercent": -5.4
+      }
+    ]
+  },
+  
+  "recentOrders": [
+    {
+      "id": "DH001",
+      "customer": {
+        "name": "Nguyễn Văn A",
+        "email": "nguyenvana@email.com",
+        "phone": "0901234567",
+        "address": "123 Nguyễn Trãi, Q.1, TP.HCM"
+      },
+      "total": 1250000,
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-19T08:15:00.000Z",
+      "completedDate": "2025-09-19T14:30:00.000Z",
+      "items": [
+        {"productId": "SP002", "name": "Giày sneaker thể thao", "quantity": 2, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 15, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH002",
+      "customer": {
+        "name": "Trần Thị B",
+        "email": "tranthib@email.com", 
+        "phone": "0912345678",
+        "address": "456 Lê Lợi, Q.3, TP.HCM"
+      },
+      "total": 890000,
+      "status": "processing",
+      "paymentMethod": "bank_transfer",
+      "shippingMethod": "standard",
+      "orderDate": "2025-09-19T09:30:00.000Z",
+      "items": [
+        {"productId": "SP003", "name": "Túi xách nữ cao cấp", "quantity": 2, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 10, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH003",
+      "customer": {
+        "name": "Lê Văn C",
+        "email": "levanc@email.com",
+        "phone": "0923456789",
+        "address": "789 Điện Biên Phủ, Q.Bình Thạnh, TP.HCM"
+      },
+      "total": 2150000,
+      "status": "pending",
+      "paymentMethod": "cod",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-18T16:45:00.000Z",
+      "items": [
+        {"productId": "SP004", "name": "Điện thoại Samsung Galaxy", "quantity": 1, "price": 1500000},
+        {"productId": "SP002", "name": "Giày sneaker thể thao", "quantity": 4, "price": 150000}
+      ]
+    },
+    {
+      "id": "DH004",
+      "customer": {
+        "name": "Phạm Thị D",
+        "email": "phamthid@email.com",
+        "phone": "0934567890",
+        "address": "321 Võ Văn Tần, Q.3, TP.HCM"
+      },
+      "total": 675000,
+      "status": "completed",
+      "paymentMethod": "e_wallet",
+      "shippingMethod": "standard",
+      "orderDate": "2025-09-18T11:20:00.000Z",
+      "completedDate": "2025-09-18T17:45:00.000Z",
+      "items": [
+        {"productId": "SP003", "name": "Túi xách nữ cao cấp", "quantity": 3, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 3, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH005",
+      "customer": {
+        "name": "Hoàng Văn E",
+        "email": "hoangvane@email.com",
+        "phone": "0945678901",
+        "address": "654 Cách Mạng Tháng 8, Q.10, TP.HCM"
+      },
+      "total": 1450000,
+      "status": "cancelled",
+      "paymentMethod": "credit_card",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-18T14:10:00.000Z",
+      "cancelledDate": "2025-09-18T16:20:00.000Z",
+      "cancelReason": "Khách hàng thay đổi ý định",
+      "items": [
+        {"productId": "SP002", "name": "Giày sneaker thể thao", "quantity": 5, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 12, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH006",
+      "customer": {
+        "name": "Vũ Thị F",
+        "email": "vuthif@email.com",
+        "phone": "0956789012",
+        "address": "987 Nguyễn Thị Minh Khai, Q.1, TP.HCM"
+      },
+      "total": 3200000,
+      "status": "processing",
+      "paymentMethod": "bank_transfer",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-17T13:25:00.000Z",
+      "items": [
+        {"productId": "SP005", "name": "Laptop Dell Inspiron", "quantity": 1, "price": 2000000},
+        {"productId": "SP002", "name": "Giày sneaker thể thao", "quantity": 8, "price": 150000}
+      ]
+    },
+    {
+      "id": "DH007",
+      "customer": {
+        "name": "Đặng Văn G",
+        "email": "dangvang@email.com",
+        "phone": "0967890123",
+        "address": "147 Hai Bà Trưng, Q.1, TP.HCM"
+      },
+      "total": 950000,
+      "status": "completed",
+      "paymentMethod": "cod",
+      "shippingMethod": "standard",
+      "orderDate": "2025-09-17T10:15:00.000Z",
+      "completedDate": "2025-09-17T18:30:00.000Z",
+      "items": [
+        {"productId": "SP003", "name": "Túi xách nữ cao cấp", "quantity": 4, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 6, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH008",
+      "customer": {
+        "name": "Bùi Thị H",
+        "email": "buithih@email.com",
+        "phone": "0978901234",
+        "address": "258 Pasteur, Q.3, TP.HCM"
+      },
+      "total": 1780000,
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-17T15:40:00.000Z",
+      "items": [
+        {"productId": "SP004", "name": "Điện thoại Samsung Galaxy", "quantity": 1, "price": 1500000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 4, "price": 60000}
+      ]
+    },
+    {
+      "id": "DH009",
+      "customer": {
+        "name": "Ngô Văn I",
+        "email": "ngovani@email.com",
+        "phone": "0989012345",
+        "address": "369 Nam Kỳ Khởi Nghĩa, Q.3, TP.HCM"
+      },
+      "total": 2450000,
+      "status": "completed",
+      "paymentMethod": "e_wallet",
+      "shippingMethod": "express",
+      "orderDate": "2025-09-16T12:50:00.000Z",
+      "completedDate": "2025-09-16T19:15:00.000Z",
+      "items": [
+        {"productId": "SP005", "name": "Laptop Dell Inspiron", "quantity": 1, "price": 2000000},
+        {"productId": "SP003", "name": "Túi xách nữ cao cấp", "quantity": 3, "price": 150000}
+      ]
+    },
+    {
+      "id": "DH010",
+      "customer": {
+        "name": "Dương Thị K",
+        "email": "duongthik@email.com",
+        "phone": "0990123456",
+        "address": "741 Trần Hưng Đạo, Q.5, TP.HCM"
+      },
+      "total": 1120000,
+      "status": "processing",
+      "paymentMethod": "bank_transfer",
+      "shippingMethod": "standard",
+      "orderDate": "2025-09-16T09:35:00.000Z",
+      "items": [
+        {"productId": "SP002", "name": "Giày sneaker thể thao", "quantity": 4, "price": 150000},
+        {"productId": "SP001", "name": "Áo thun basic premium", "quantity": 9, "price": 60000}
+      ]
+    }
+  ],
+  
+  "seoData": {
+    "topKeywords": [
+      {
+        "keyword": "dashboard bán hàng",
+        "position": 3,
+        "searchVolume": 2400,
+        "difficulty": "medium",
+        "trend": "up",
+        "clicks": 234,
+        "impressions": 1890
+      },
+      {
+        "keyword": "quản lý doanh thu",
+        "position": 7,
+        "searchVolume": 1800,
+        "difficulty": "low",
+        "trend": "stable",
+        "clicks": 156,
+        "impressions": 1234
+      },
+      {
+        "keyword": "phần mềm bán hàng",
+        "position": 12,
+        "searchVolume": 3200,
+        "difficulty": "high",
+        "trend": "up",
+        "clicks": 89,
+        "impressions": 987
+      },
+      {
+        "keyword": "báo cáo doanh thu",
+        "position": 18,
+        "searchVolume": 1200,
+        "difficulty": "medium",
+        "trend": "down",
+        "clicks": 67,
+        "impressions": 756
+      },
+      {
+        "keyword": "SEO cho website",
+        "position": 24,
+        "searchVolume": 4500,
+        "difficulty": "high",
+        "trend": "stable",
+        "clicks": 45,
+        "impressions": 634
+      }
+    ],
+    "organicTraffic": {
+      "total": 12450,
+      "lastMonth": 10120,
+      "changePercent": 23.5,
+      "trend": "up"
+    },
+    "crawlErrors": {
+      "total": 3,
+      "errors404": 2,
+      "errors500": 1,
+      "lastChecked": "2025-09-19T06:00:00.000Z"
+    },
+    "insights": [
+      {
+        "type": "warning",
+        "title": "Meta description thiếu",
+        "description": "Trang 'Sản phẩm mới' thiếu meta description",
+        "priority": "medium",
+        "action": "Thêm meta description 150-160 ký tự"
+      },
+      {
+        "type": "error",
+        "title": "Title quá dài",
+        "description": "Title trang chủ quá dài (68 ký tự), nên rút xuống dưới 60",
+        "priority": "high",
+        "action": "Rút ngắn title xuống 50-60 ký tự"
+      },
+      {
+        "type": "success",
+        "title": "Cải thiện tốc độ tải",
+        "description": "Tốc độ tải trang được cải thiện 15% trong tuần qua",
+        "priority": "info",
+        "action": "Tiếp tục theo dõi và tối ưu"
+      },
+      {
+        "type": "info",
+        "title": "Cơ hội từ khóa mới",
+        "description": "Có thể tối ưu từ khóa 'bán hàng online' cho trang danh mục",
+        "priority": "low",
+        "action": "Tạo content tối ưu cho từ khóa này"
+      }
+    ]
+  },
+  
+  "widgets": {
+    "recentSearches": [
+      {"query": "áo thun nam", "count": 234, "trend": "up"},
+      {"query": "giày sneaker", "count": 187, "trend": "up"},
+      {"query": "túi xách nữ", "count": 156, "trend": "stable"},
+      {"query": "điện thoại samsung", "count": 143, "trend": "down"},
+      {"query": "laptop gaming", "count": 128, "trend": "up"}
+    ],
+    "lowStockProducts": [
+      {"id": "SP011", "name": "Áo thun basic", "stock": 5, "reorderLevel": 10},
+      {"id": "SP012", "name": "Giày chạy bộ", "stock": 3, "reorderLevel": 15},
+      {"id": "SP013", "name": "Túi laptop", "stock": 2, "reorderLevel": 8},
+      {"id": "SP014", "name": "Đồng hồ thông minh", "stock": 1, "reorderLevel": 5}
+    ]
+  },
+  
+  "settings": {
+    "company": {
+      "name": "DeadlineSEO",
+      "logo": "/assets/logo.png",
+      "address": "123 Nguyễn Huệ, Q.1, TP.HCM",
+      "phone": "+84-28-1234-5678",
+      "email": "info@deadlineseo.com",
+      "website": "https://deadlineseo.com"
+    },
+    "currency": {
+      "code": "VND",
+      "symbol": "₫",
+      "locale": "vi-VN"
+    },
+    "timezone": "Asia/Ho_Chi_Minh",
+    "language": "vi"
+  }
+}
