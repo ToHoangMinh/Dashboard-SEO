@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- SEO Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bán Hàng - Quản Lý Doanh Thu & SEO | DeadlineSEO</title>
+    <meta name="description" content="Dashboard quản lý bán hàng chuyên nghiệp với theo dõi doanh thu, đơn hàng, SEO và phân tích chi tiết. Giao diện thân thiện, báo cáo realtime.">
+    <meta name="keywords" content="dashboard bán hàng, quản lý doanh thu, SEO dashboard, phân tích bán hàng, báo cáo doanh thu">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="DeadlineSEO">
+    <link rel="canonical" href="https://deadlineseo.com/dashboard">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dashboard Bán Hàng - Quản Lý Doanh Thu & SEO">
+    <meta property="og:description" content="Dashboard quản lý bán hàng chuyên nghiệp với theo dõi doanh thu, đơn hàng, SEO và phân tích chi tiết.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deadlineseo.com/dashboard">
+    <meta property="og:image" content="https://deadlineseo.com/assets/dashboard-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="DeadlineSEO">
+    <meta property="og:locale" content="vi_VN">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@deadlineseo">
+    <meta name="twitter:creator" content="@deadlineseo">
+    <meta name="twitter:title" content="Dashboard Bán Hàng - Quản Lý Doanh Thu & SEO">
+    <meta name="twitter:description" content="Dashboard quản lý bán hàng chuyên nghiệp với theo dõi doanh thu, đơn hàng, SEO và phân tích chi tiết.">
+    <meta name="twitter:image" content="https://deadlineseo.com/assets/dashboard-preview.jpg">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://deadlineseo.com/#organization",
+                "name": "DeadlineSEO",
+                "url": "https://deadlineseo.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://deadlineseo.com/logo.png",
+                    "width": 400,
+                    "height": 100
+                },
+                "description": "Giải pháp quản lý bán hàng và SEO toàn diện cho doanh nghiệp",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+84-xxx-xxx-xxx",
+                    "contactType": "customer service",
+                    "availableLanguage": ["vi", "en"]
+                },
+                "sameAs": [
+                    "https://facebook.com/deadlineseo",
+                    "https://twitter.com/deadlineseo"
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://deadlineseo.com/dashboard/#webpage",
+                "url": "https://deadlineseo.com/dashboard",
+                "name": "Dashboard Bán Hàng - Quản Lý Doanh Thu & SEO",
+                "description": "Dashboard quản lý bán hàng chuyên nghiệp với theo dõi doanh thu, đơn hàng, SEO và phân tích chi tiết.",
+                "isPartOf": {
+                    "@id": "https://deadlineseo.com/#website"
+                },
+                "about": {
+                    "@id": "https://deadlineseo.com/#organization"
+                },
+                "datePublished": "2025-09-19",
+                "dateModified": "2025-09-19"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="header-left">
+                <button class="sidebar-toggle" aria-label="Toggle sidebar navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <div class="logo-section">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%230fb9a0'/%3E%3Ctext x='20' y='26' text-anchor='middle' fill='white' font-family='Arial' font-size='16' font-weight='bold'%3ED%3C/text%3E%3C/svg%3E" 
+                         alt="DeadlineSEO Logo" width="40" height="40" class="logo">
+                    <h1 class="site-title">Dashboard Bán Hàng</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="date-selector">
+                    <label for="dateRange" class="sr-only">Chọn khoảng thời gian</label>
+                    <select id="dateRange" class="date-dropdown" aria-label="Chọn khoảng thời gian báo cáo">
+                        <option value="today">Hôm nay</option>
+                        <option value="7days">7 ngày qua</option>
+                        <option value="30days" selected>30 ngày qua</option>
+                        <option value="90days">90 ngày qua</option>
+                    </select>
+                </div>
+                <div class="user-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%235b4de3'/%3E%3Ccircle cx='20' cy='16' r='6' fill='white'/%3E%3Cpath d='M8 32c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='white'/%3E%3C/svg%3E" 
+                         alt="User Avatar" width="40" height="40" class="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" role="navigation" aria-label="Main navigation">
+        <ul class="nav-menu">
+            <li><a href="#dashboard" class="nav-link active" aria-current="page">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Dashboard</span>
+            </a></li>
+            <li><a href="#orders" class="nav-link">
+                <span class="nav-icon">📦</span>
+                <span class="nav-text">Đơn Hàng</span>
+            </a></li>
+            <li><a href="#products" class="nav-link">
+                <span class="nav-icon">🛍️</span>
+                <span class="nav-text">Sản Phẩm</span>
+            </a></li>
+            <li><a href="#seo" class="nav-link">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-text">SEO</span>
+            </a></li>
+            <li><a href="#reports" class="nav-link">
+                <span class="nav-icon">📈</span>
+                <span class="nav-text">Báo Cáo</span>
+            </a></li>
+            <li><a href="#ai" class="nav-link">
+                <span class="nav-icon">🤖</span>
+                <span class="nav-text">Trợ Lý AI</span>
+            </a></li>
+            <li><a href="#settings" class="nav-link">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">Cài Đặt</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        <!-- KPI Cards Section -->
+        <section class="kpi-section" aria-labelledby="kpi-heading" id="dashboard">
+            <h2 id="kpi-heading" class="section-title">Tổng Quan Hiệu Suất</h2>
+            <div class="kpi-grid">
+                <article class="kpi-card revenue-card" role="article">
+                    <div class="kpi-icon">💰</div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">Doanh Thu Hôm Nay</h3>
+                        <div class="kpi-value" id="revenue-today">45,890,000₫</div>
+                        <div class="kpi-change positive" id="revenue-change">+12.5% so với hôm qua</div>
+                    </div>
+                </article>
+
+                <article class="kpi-card orders-card" role="article">
+                    <div class="kpi-icon">📋</div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">Đơn Hàng</h3>
+                        <div class="kpi-value" id="orders-today">247 đơn</div>
+                        <div class="kpi-change positive" id="orders-change">+8.3% so với hôm qua</div>
+                    </div>
+                </article>
+
+                <article class="kpi-card conversion-card" role="article">
+                    <div class="kpi-icon">📊</div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">Tỉ Lệ Chuyển Đổi</h3>
+                        <div class="kpi-value" id="conversion-rate">3.2%</div>
+                        <div class="kpi-change negative" id="conversion-change">-0.5% so với hôm qua</div>
+                    </div>
+                </article>
+
+                <article class="kpi-card traffic-card" role="article">
+                    <div class="kpi-icon">👥</div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">Lượt Truy Cập</h3>
+                        <div class="kpi-value" id="visitors-today">7,823 lượt</div>
+                        <div class="kpi-change positive" id="visitors-change">+15.7% so với hôm qua</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        
+
+        <!-- Orders Table Section -->
+        <section class="orders-section" aria-labelledby="orders-heading" id="orders">
+            <h2 id="orders-heading" class="section-title">Đơn Hàng Mới Nhất</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <h3 class="table-title">10 Đơn Hàng Gần Đây</h3>
+                    <button class="export-btn" onclick="exportToCSV()" aria-label="Xuất dữ liệu ra CSV">
+                        📊 Xuất CSV
+                    </button>
+                </div>
+                <div class="table-wrapper" role="region" aria-label="Bảng đơn hàng" tabindex="0">
+                    <table class="orders-table" id="ordersTable">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="sortable" data-column="id">
+                                    Mã Đơn <span class="sort-indicator">↕️</span>
+                                </th>
+                                <th scope="col" class="sortable" data-column="customer">
+                                    Khách Hàng <span class="sort-indicator">↕️</span>
+                                </th>
+                                <th scope="col" class="sortable" data-column="total">
+                                    Tổng Tiền <span class="sort-indicator">↕️</span>
+                                </th>
+                                <th scope="col" class="sortable" data-column="status">
+                                    Trạng Thái <span class="sort-indicator">↕️</span>
+                                </th>
+                                <th scope="col" class="sortable" data-column="date">
+                                    Ngày Đặt <span class="sort-indicator">↕️</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersTableBody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports Section -->
+        <section class="reports-section" aria-labelledby="reports-heading" id="reports">
+            <h2 id="reports-heading" class="section-title">Báo Cáo</h2>
+            <div class="reports-controls">
+                <label for="sheetUrlInput" class="sr-only">Google Sheet URL hoặc ID</label>
+                <input id="sheetUrlInput" class="sheet-input" type="text" placeholder="Dán Google Sheet URL hoặc ID..." aria-label="Google Sheet URL hoặc ID">
+                <button class="quick-action-btn sync-sheet-btn" id="syncSheetBtn" aria-label="Đồng bộ từ Google Sheet">🔗 Đồng Bộ Google Sheet</button>
+            </div>
+            <div class="reports-summary" id="reportsSummary" aria-live="polite">
+                <div class="summary-grid">
+                    <article class="summary-card">
+                        <h3>Tổng Doanh Thu</h3>
+                        <div class="summary-value" id="report-total-revenue">—</div>
+                    </article>
+                    <article class="summary-card">
+                        <h3>Tổng Đơn Hàng</h3>
+                        <div class="summary-value" id="report-total-orders">—</div>
+                    </article>
+                    <article class="summary-card">
+                        <h3>Hoàn Thành</h3>
+                        <div class="summary-value" id="report-completed">—</div>
+                    </article>
+                    <article class="summary-card">
+                        <h3>Đang Xử Lý</h3>
+                        <div class="summary-value" id="report-processing">—</div>
+                    </article>
+                    <article class="summary-card">
+                        <h3>Chờ Xử Lý</h3>
+                        <div class="summary-value" id="report-pending">—</div>
+                    </article>
+                    <article class="summary-card">
+                        <h3>Đã Hủy</h3>
+                        <div class="summary-value" id="report-cancelled">—</div>
+                    </article>
+                </div>
+                <div class="reports-note" id="reportsNote">
+                    <strong>📋 Hướng dẫn sử dụng:</strong><br>
+                    • Sheet phải công khai hoặc đã Publish to the web<br>
+                    • Cột bắt buộc: ID, Customer, Total, Status, Date<br>
+                    • Tên cột có thể là: id/ma_don, customer/khach_hang, total/tong_tien, status/trang_thai, date/ngay_dat<br>
+                    • Nhấn "📊 Dữ Liệu Mẫu" để test với dữ liệu mẫu
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Products Section (minimal) -->
+        <section class="products-section" aria-labelledby="products-heading" id="products">
+            <h2 id="products-heading" class="section-title">Sản Phẩm</h2>
+            <div class="placeholder">
+                Danh mục Sản phẩm đang cập nhật. Bạn có thể thêm quản trị sản phẩm sau.
+            </div>
+        </section>
+
+        <!-- SEO Panel Section -->
+        <section class="seo-section" aria-labelledby="seo-heading" id="seo">
+            <h2 id="seo-heading" class="section-title">Tổng Quan SEO</h2>
+            <div class="seo-grid">
+                <article class="seo-card keywords-card">
+                    <h3 class="seo-card-title">Từ Khóa Hàng Đầu</h3>
+                    <ul class="keywords-list" id="topKeywords">
+                        <li>đồ dùng cho bé <span class="keyword-rank">#3</span></li>
+                        <li>sữa bột cho bé <span class="keyword-rank">#6</span></li>
+                        <li>tã bỉm em bé <span class="keyword-rank">#9</span></li>
+                        <li>ty giả an toàn <span class="keyword-rank">#14</span></li>
+                        <li>kẹo dẻo vitamin trẻ em <span class="keyword-rank">#21</span></li>
+                    </ul>
+                </article>
+
+                <article class="seo-card traffic-trend-card">
+                    <h3 class="seo-card-title">Xu Hướng Traffic Organic</h3>
+                    <div class="traffic-stat">
+                        <div class="traffic-number">12,450</div>
+                        <div class="traffic-change positive">+23.5% so với tháng trước</div>
+                    </div>
+                </article>
+
+                <article class="seo-card crawl-errors-card">
+                    <h3 class="seo-card-title">Lỗi Crawl</h3>
+                    <div class="crawl-stat">
+                        <div class="crawl-number">3</div>
+                        <div class="crawl-detail">2 lỗi 404, 1 lỗi 500</div>
+                    </div>
+                </article>
+            </div>
+
+            <article class="seo-insights">
+                <h3 class="insights-title">Gợi Ý SEO</h3>
+                <ul class="insights-list" id="seoInsights">
+                    <li class="insight-item warning">
+                        <span class="insight-icon">⚠️</span>
+                        <span class="insight-text">Trang danh mục "Đồ dùng cho bé" thiếu FAQ schema cho câu hỏi thường gặp.</span>
+                    </li>
+                    <li class="insight-item error">
+                        <span class="insight-icon">❌</span>
+                        <span class="insight-text">Nhiều sản phẩm ngành mẹ & bé thiếu đánh giá (Review schema), ảnh hưởng E-E-A-T.</span>
+                    </li>
+                    <li class="insight-item success">
+                        <span class="insight-icon">✅</span>
+                        <span class="insight-text">Tốc độ tải trang được cải thiện 15% trong tuần qua</span>
+                    </li>
+                    <li class="insight-item info">
+                        <span class="insight-icon">💡</span>
+                        <span class="insight-text">Thêm hướng dẫn "Cách chọn sữa bột theo độ tuổi" để tăng traffic dài hạn.</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- Settings Section (minimal) -->
+        <section class="settings-section" aria-labelledby="settings-heading" id="settings">
+            <h2 id="settings-heading" class="section-title">Cài Đặt</h2>
+            <div class="settings-grid">
+                <article class="setting-item">
+                    <h3>Backup Dữ Liệu</h3>
+                    <p>Tải xuống dữ liệu hiện tại (KPI, đơn hàng, cấu hình) dạng JSON.</p>
+                    <button class="quick-action-btn" id="backupDataBtn" aria-label="Tải xuống bản sao dữ liệu" onclick="backupData()">💾 Tải Xuống Dữ Liệu</button>
+                </article>
+                <article class="setting-item">
+                    <h3>Tích Hợp WooCommerce</h3>
+                    <p>Kết nối cửa hàng WooCommerce để đồng bộ đơn hàng vào dashboard.</p>
+                    <div class="ai-config">
+                        <div class="form-row">
+                            <label for="wooStoreUrl">Store URL</label>
+                            <input type="text" id="wooStoreUrl" placeholder="https://khanhngockorea.com" aria-label="WooCommerce Store URL">
+                        </div>
+                        <div class="form-row">
+                            <label for="wooConsumerKey">Consumer Key</label>
+                            <input type="text" id="wooConsumerKey" placeholder="ck_..." aria-label="WooCommerce Consumer Key">
+                        </div>
+                        <div class="form-row">
+                            <label for="wooConsumerSecret">Consumer Secret</label>
+                            <input type="password" id="wooConsumerSecret" placeholder="cs_..." aria-label="WooCommerce Consumer Secret">
+                        </div>
+                        <div class="ai-actions">
+                            <button class="quick-action-btn" id="wooSyncBtn" aria-label="Đồng bộ WooCommerce">🔄 Đồng Bộ WooCommerce</button>
+                        </div>
+                        <small>Lưu ý: Cần bật HTTPS và CORS trên website để trình duyệt truy cập API trực tiếp.</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section class="ai-section" aria-labelledby="ai-heading" id="ai">
+            <h2 id="ai-heading" class="section-title">🤖 Trợ Lý AI Thông Minh</h2>
+            <div class="ai-grid">
+                <article class="ai-config">
+                    <div class="config-header">
+                        <h3>⚙️ Cấu Hình AI</h3>
+                        <div class="config-status">
+                            <span class="status-indicator active"></span>
+                            <span class="status-text">Đã sẵn sàng</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="openaiApiKey">🔑 OpenAI API Key</label>
+                        <input type="password" id="openaiApiKey" placeholder="sk-..." aria-label="OpenAI API Key">
+                        <small class="form-help">API key đã được cài đặt sẵn</small>
+                    </div>
+                    <div class="form-row">
+                        <label for="aiModel">🧠 Model AI</label>
+                        <select id="aiModel" aria-label="Chọn model AI">
+                            <option value="gpt-4o-mini" selected>gpt-4o-mini (Nhanh & Tiết kiệm)</option>
+                            <option value="gpt-4o">gpt-4o (Mạnh mẽ)</option>
+                            <option value="gpt-4.1-mini">gpt-4.1-mini (Cân bằng)</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="industryInput">🏢 Ngành hàng</label>
+                        <input type="text" id="industryInput" placeholder="Thương mại điện tử" aria-label="Ngành hàng">
+                    </div>
+                    <div class="thresholds-section">
+                        <h4>📊 Ngưỡng Cảnh Báo KPI</h4>
+                        <div class="form-row thresholds">
+                            <div class="threshold-item">
+                                <label for="thRevenueMin">💰 Doanh thu tối thiểu</label>
+                                <input type="number" id="thRevenueMin" placeholder="40,000,000">
+                                <small>VNĐ</small>
+                            </div>
+                            <div class="threshold-item">
+                                <label for="thOrdersMin">📦 Đơn tối thiểu</label>
+                                <input type="number" id="thOrdersMin" placeholder="200">
+                                <small>đơn/ngày</small>
+                            </div>
+                            <div class="threshold-item">
+                                <label for="thConversionMin">📈 CR tối thiểu</label>
+                                <input type="number" id="thConversionMin" placeholder="3">
+                                <small>%</small>
+                            </div>
+                            <div class="threshold-item">
+                                <label for="thVisitorsMin">👥 Traffic tối thiểu</label>
+                                <input type="number" id="thVisitorsMin" placeholder="6000">
+                                <small>lượt/ngày</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ai-actions">
+                        <button class="quick-action-btn primary" id="analyzeKpiBtn">
+                            <span class="btn-icon">⚠️</span>
+                            <span class="btn-text">Phân Tích KPI</span>
+                        </button>
+                        <button class="quick-action-btn secondary" id="seoTrendsBtn">
+                            <span class="btn-icon">📈</span>
+                            <span class="btn-text">Xu Hướng SEO</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="ai-warnings">
+                    <div class="warnings-header">
+                        <h3>🚨 Cảnh Báo Chỉ Số</h3>
+                        <div class="warning-count" id="warningCount">0</div>
+                    </div>
+                    <div class="warnings-container">
+                        <ul id="aiWarningsList" class="warnings-list" aria-live="polite">
+                            <li class="no-warnings">✅ Tất cả chỉ số đang ở mức tốt</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="ai-chat">
+                    <div class="chat-header">
+                        <h3>💬 Chat với AI</h3>
+                        <div class="chat-status">
+                            <span class="status-dot"></span>
+                            <span>Trực tuyến</span>
+                        </div>
+                    </div>
+                    <div id="aiChatLog" class="chat-log" aria-live="polite">
+                        <div class="welcome-message">
+                            <div class="welcome-icon">🤖</div>
+                            <div class="welcome-text">
+                                <strong>Xin chào! Tôi là trợ lý AI của bạn.</strong><br>
+                                Hãy hỏi tôi về KPI, SEO, hoặc bất kỳ điều gì liên quan đến kinh doanh!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="aiUserInput" placeholder="Nhập câu hỏi của bạn..." aria-label="Tin nhắn người dùng">
+                        <button class="quick-action-btn send-btn" id="aiSendBtn">
+                            <span class="btn-icon">📤</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <div class="ai-footer">
+                <p class="ai-note">
+                    <span class="note-icon">ℹ️</span>
+                    API key và cấu hình được lưu cục bộ trong trình duyệt của bạn. Dữ liệu được mã hóa và bảo mật.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Right Aside Widgets -->
+    <aside class="right-sidebar" role="complementary" aria-label="Widget bên phải">
+        <section class="widget recent-searches-widget" aria-labelledby="recent-searches-heading">
+            <h3 id="recent-searches-heading" class="widget-title">Tìm Kiếm Gần Đây</h3>
+            <ul class="recent-searches-list" id="recentSearches">
+                <li>"tã bỉm size M"<span class="search-count">312 lượt</span></li>
+                <li>"sữa bột 6-12 tháng"<span class="search-count">276 lượt</span></li>
+                <li>"ty giả an toàn"<span class="search-count">221 lượt</span></li>
+                <li>"kem chống hăm cho bé"<span class="search-count">198 lượt</span></li>
+                <li>"bình sữa cổ rộng"<span class="search-count">167 lượt</span></li>
+            </ul>
+        </section>
+
+        <section class="widget low-stock-widget" aria-labelledby="low-stock-heading">
+            <h3 id="low-stock-heading" class="widget-title">Sản Phẩm Sắp Hết</h3>
+            <ul class="low-stock-list" id="lowStockProducts">
+                <li>Tã bỉm size M (54 miếng) <span class="stock-count">5 còn lại</span></li>
+                <li>Sữa bột 6-12 tháng 850g <span class="stock-count">3 còn lại</span></li>
+                <li>Ty giả silicone 0-6m <span class="stock-count">2 còn lại</span></li>
+                <li>Kem chống hăm 50g <span class="stock-count">1 còn lại</span></li>
+            </ul>
+        </section>
+
+        <section class="widget quick-actions-widget" aria-labelledby="quick-actions-heading">
+            <h3 id="quick-actions-heading" class="widget-title">Thao Tác Nhanh</h3>
+            <div class="quick-actions">
+                <button class="quick-action-btn export-report-btn" onclick="printReport()" aria-label="In báo cáo">
+                    🖨️ In Báo Cáo
+                </button>
+                <button class="quick-action-btn backup-btn" aria-label="Sao lưu dữ liệu" onclick="backupData()">
+                    💾 Sao Lưu
+                </button>
+                <button class="quick-action-btn refresh-btn" onclick="refreshDashboard()" aria-label="Làm mới dashboard">
+                    🔄 Làm Mới
+                </button>
+            </div>
+        </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 DeadlineSEO. Dashboard Bán Hàng - Phiên bản 2.1.0</p>
+            <div class="footer-links">
+                <a href="#privacy">Chính sách bảo mật</a>
+                <a href="#terms">Điều khoản sử dụng</a>
+                <a href="#support">Hỗ trợ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
